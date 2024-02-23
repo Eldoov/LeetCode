@@ -1,4 +1,4 @@
-# LeetCode 242 Valid Anagram
+# 242 Valid Anagram
 
 def isAnagram(self, s, t) -> bool:
     if len(s) != len(t):
@@ -7,9 +7,25 @@ def isAnagram(self, s, t) -> bool:
 
 
 s = ['e', 'e', 'r', 't']
+t = ['r', 'e', 'e', 't']
 w = {}
+v = {}
 
-for x in range(len(s)):
-    w[s[x]] = 1 + w.get(s[x], 0)
-    print(w[s[x]])
+for i in range(len(s)):
+    if s[i] in w:
+        w[s[i]] += 1
+    else:
+        w[s[i]] = 1
+
+    if t[i] in v:
+        v[t[i]] += 1
+    else:
+        v[t[i]] = 1
+
+
+print(w)
+print(v)
+print(w == v)
+
+
 
