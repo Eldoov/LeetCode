@@ -1,4 +1,4 @@
-# 242 Valid Anagram
+# 242. Valid Anagram
 
 def isAnagram(self, s, t) -> bool:
     if len(s) != len(t):

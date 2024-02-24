@@ -1,4 +1,4 @@
-# 217 Contains Duplicate
+# 217. Contains Duplicate
 
 def containsDuplicate(nums):
     for x in range(0, len(nums)-1):
